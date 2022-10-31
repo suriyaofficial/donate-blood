@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right,#0178af , #00b49c);
+    /* background: linear-gradient(to right,#0178af , #00b49c); */
     font-family: 'Poppins', sans-serif;
 }
 
