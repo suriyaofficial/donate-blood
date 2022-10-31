@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-card{
+
+    width: 280;
+    height: 400;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2rem;
+    border-radius: 30px;
+    position: relative;
+    
+    
+}
+.login-card::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(255, 255, 255, .3);
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.logo,.footer{
+    
+    text-align: center;
+    
+}
+.logo{
+    
+    font-size:calc(2rem*.8) ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header{
+    text-align: center;
+        
+}
+
+.login-form{
+align-items: center;
+justify-content: center;
+}
+.form-details{
+    text-align: center;
+    padding:10px;
+    position: relative;
+}
+.form-details .icon{
+
+    position: absolute;
+    opacity: .5;
+    padding: calc(1rem*.3);
+    padding-left: 1rem;
+    color: black;
+    
+
+}
+.form-details-other{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: calc(1rem*.8);
+}
+.login-card input[type=email],
+.login-card input[type=password]{
+    width: 100%;
+    padding: .5rem .5rem;
+    padding-left: 3rem;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: rgb(224, 223, 223);
+
+}
+.login-card input:focus{
+    background-color: white;
+}
+.login-card input::placeholder{
+    text-transform: uppercase;
+    opacity: .8;
+
+}
+.login-card input[type=checkbox]{
+    width: 16px;
+    accent-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+}
+.login-form button{
+    
+    padding: 10px;
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing:calc(1rem*.3);
+    text-transform: uppercase
+
+}
+.login-form button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.footer{
+
+    font-size:calc(1rem*.8) ;
+    
+}
+.social-media{
+    text-align: center;
+    padding: calc(1rem*.5);
+    
+}
+.social-media>div{
+    padding-bottom: calc(1rem*.5);
+}
+.social-media-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.social-media-btn a{
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+}
+.social-media-btn a:hover{
+    scale: 1.1;
+}
+.copyrights{
+    margin: 0px;
+    padding: .3rem;
+    bottom: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;   
+    
+}
+.chat{
+    right: 20px;
+  bottom: 50px;
+  position: fixed;
+  z-index: 9999;
+}
+.chat .icon{
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 100px;
+}
+.chat .icon:hover{
+    scale: 1.1;
+}
+
